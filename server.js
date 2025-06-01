@@ -4,7 +4,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 
 app.use('/', createProxyMiddleware({
-  target: 'http://217.77.6.33:25293',
+  target: 'http://15.204.142.106:25293',
   changeOrigin: true,
   ws: true,
   onProxyReq: (proxyReq, req, res) => {
